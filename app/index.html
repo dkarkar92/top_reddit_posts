@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="reddit">
+ 	<head>
+	   	<title>AngularJS Tutorials</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+ 	</head>
+ 	<body ng-controller="RedditController as reddit">
+
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12" ng-repeat="element in elements">
+					<ul>
+						<li>{{element.title}}</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+   		<!-- <div ng-repeat="product in reddit.products">
+			<h1>{{product.name}}</h1>
+			<h2>${{product.price}}</h2>
+			<p>{{rproduct.description}}</p>
+			<button ng-show="product.canPurchase">Add</button>
+   		</div> -->
+
+   	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular.min.js"></script>
+   	<script type="text/javascript" src="app.js"></script>
+ 	</body>
+</html>
